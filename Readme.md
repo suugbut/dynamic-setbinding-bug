@@ -8,7 +8,6 @@
 
 ### Issues
 Consider the following screenshots.
-The `Down` button should be disabled when the first radio button is selected.
 ![alt text](bug.png)
 
 
