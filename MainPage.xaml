@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:loc="clr-namespace:Trash"
+    x:Class="Trash.MainPage"
+    x:DataType="loc:MainPageViewModel">
+    <VerticalStackLayout
+        RadioButtonGroup.GroupName="ChangerGroup">
+        <RadioButton
+            x:Name="RadioValueA"
+            Content="{Binding ValueA}"
+            CheckedChanged="Radio_CheckedChanged" />
+        <RadioButton
+            x:Name="RadioValueB"
+            Content="{Binding ValueB}"
+            CheckedChanged="Radio_CheckedChanged" />
+        <loc:Changer
+            x:Name="ChangerInstance"
+            Text="{Binding ValueA}" />
+    </VerticalStackLayout>
+</ContentPage>
